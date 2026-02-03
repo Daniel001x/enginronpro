@@ -3,6 +3,7 @@ import { Pill } from "@/components/Pill";
 import { ProjectCard } from "@/components/ProjectCard";
 import { SectionTitle } from "@/components/SectionTitle";
 import { SocialButton } from "@/components/SocialButton";
+import { GitHubContributions } from "@/components/GitHubContributions";
 
 function Icon({ children }: { children: React.ReactNode }) {
   return <span className="-ml-1 inline-flex h-5 w-5 items-center">{children}</span>;
@@ -150,6 +151,18 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* GITHUB CONTRIBUTIONS */}
+        <section className="mt-12">
+          <SectionTitle>GitHub Contributions</SectionTitle>
+          <p className="mt-2 text-sm leading-7 text-zinc-600 dark:text-zinc-300">
+            A live snapshot of my recent GitHub activity.
+          </p>
+
+          <div className="mt-6 rounded-2xl border border-black/10 bg-zinc-50 p-4 shadow-sm dark:border-white/10 dark:bg-zinc-900/20 sm:p-6">
+            <GitHubContributions githubUrl={portfolio.links.github} />
           </div>
         </section>
 
