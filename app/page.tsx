@@ -165,6 +165,38 @@ export default function Home() {
           </div>
         </section>
 
+        {/* FOOTER CTA */}
+        <section className="mt-14">
+          <div className="rounded-2xl border border-black/10 bg-zinc-50 px-6 py-10 text-center shadow-sm dark:border-white/10 dark:bg-zinc-900/20 sm:px-10">
+            <h2 className="text-2xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-50">
+              Let&apos;s Work Together
+            </h2>
+            <p className="mx-auto mt-3 max-w-2xl text-sm leading-7 text-zinc-600 dark:text-zinc-300">
+              I&apos;m always open to discussing new opportunities, interesting projects, or
+              just having a conversation about technology and development.
+            </p>
+
+            <a
+              href={portfolio.links.email}
+              className="mx-auto mt-6 inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-black px-5 text-sm font-semibold text-white shadow-sm transition hover:bg-black/85 dark:bg-white dark:text-black dark:hover:bg-white/85"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                className="h-5 w-5"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M4 4h16v16H4z" />
+                <path d="M22 6l-10 7L2 6" />
+              </svg>
+              Get in touch
+            </a>
+          </div>
+        </section>
+
         <footer className="mt-12 pt-6 text-xs text-zinc-500 dark:text-zinc-400">
           © {new Date().getFullYear()} {portfolio.name}. Built with Next.js & Tailwind.
         </footer>
